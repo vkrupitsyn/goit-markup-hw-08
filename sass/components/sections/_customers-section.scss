@@ -1,0 +1,12 @@
+.customers {
+  @extend %section;
+}
+
+.customers__wrap {
+  @extend %container;
+}
+
+.customers__title {
+  @extend %title;
+  margin-bottom: 50px;
+}
