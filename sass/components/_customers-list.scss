@@ -17,8 +17,10 @@
   // &:not(:last-child) {
   //   margin-right: 30px;
   // }
-  &:not(:last-child) {
-    margin-bottom: 30px;
+  @media screen and (max-width: 479px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
   @media screen and (min-width: 480px) and (max-width: 787px) {
     & {
@@ -26,6 +28,9 @@
     }
     &:not(:nth-child(2n)) {
       margin-right: 30px;
+    }
+    &:not(:nth-last-child(-n + 2)) {
+      margin-bottom: 30px;
     }
   }
 }
