@@ -1,17 +1,22 @@
 .is-hidden {
   .modal {
-    transform: translate(-50%, -50%) scale(0.9);
+    // transform: translate(-50%, -50%) scale(0.9);
+    transform: scale(0.9);
   }
 }
 
 .modal {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1);
+  top: 93px;
+  left: 15px;
+  right: 15px;
+  // top: 50%;
+  // left: 50%;
+  // transform: translate(-50%, -50%) scale(1);
+  transform: scale(1);
   transition: transform 250ms var(--cubic-bezier);
 
-  width: 528px;
+  // width: 528px;
   padding: 40px;
 
   border-radius: 4px;

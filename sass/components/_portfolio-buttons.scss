@@ -1,12 +1,20 @@
 .portfolio-buttons {
   @extend %list;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  // justify-content: center;
+  justify-content: left;
   margin-bottom: 50px;
 }
 
-.portfolio-buttons__item:not(:last-child) {
-  margin-right: 8px;
+.portfolio-buttons__item {
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  &:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 15px;
+  }
 }
 
 .portfolio-buttons__link {
