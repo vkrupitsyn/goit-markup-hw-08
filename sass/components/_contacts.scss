@@ -1,8 +1,10 @@
 .contacts {
   @extend %list;
 
-  display: flex;
-  margin-left: auto;
+  display: none;
+
+  // display: flex;
+  // margin-left: auto;
 }
 
 .contacts__item:not(:last-child) {

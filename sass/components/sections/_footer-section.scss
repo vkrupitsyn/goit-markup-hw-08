@@ -6,7 +6,5 @@
 }
 
 .footer__wrap {
-  @extend %container;
-  @extend %vertical-centered;
   align-items: baseline;
 }

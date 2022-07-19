@@ -1,11 +1,11 @@
 .works {
+  display: none;
   @extend %section;
 
   padding-top: 0;
 }
 
 .works__wrap {
-  @extend %container;
 }
 
 .works__title {

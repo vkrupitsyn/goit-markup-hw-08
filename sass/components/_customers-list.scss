@@ -1,14 +1,32 @@
 .customers-list {
   @extend %list;
-  display: inline-flex;
+  // display: inline-flex;
+
+  @media screen and (min-width: 480px) {
+    & {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
 }
 
 .customers-list__item {
-  width: 170px;
-  height: 92px;
+  // width: 170px;
+  // height: 92px;
 
+  // &:not(:last-child) {
+  //   margin-right: 30px;
+  // }
   &:not(:last-child) {
-    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 480px) and (max-width: 787px) {
+    & {
+      width: calc((100% - 1 * 30px) / 2);
+    }
+    &:not(:nth-child(2n)) {
+      margin-right: 30px;
+    }
   }
 }
 
@@ -18,6 +36,7 @@
   align-items: center;
   width: 100%;
   height: 100%;
+  padding: 16px 0;
   border: 1px solid var(--social-net-color);
   border-radius: 4px;
 

@@ -4,8 +4,10 @@
 .nav__list {
   @extend %list;
 
-  display: flex;
-  margin-left: 93px;
+  display: none;
+
+  // display: flex;
+  // margin-left: 93px;
 }
 
 .nav__item {
