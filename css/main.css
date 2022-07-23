@@ -569,11 +569,6 @@ body {
       flex-wrap: wrap;
 }
 
-@media screen and (max-width: 479px) {
-  .customers-list__item:not(:last-child) {
-    margin-bottom: 30px;
-  }
-}
 @media screen and (max-width: 768px) {
   .customers-list__item {
     width: calc((100% - 30px) / 2);
