@@ -453,6 +453,7 @@ body {
 
 .contacts {
   margin-top: auto;
+  margin-bottom: 58px;
   font-weight: 500;
   font-size: 26px;
   line-height: 1.17;
@@ -465,7 +466,7 @@ body {
 }
 
 .contacts__item:not(:last-child) {
-  margin-right: 50px;
+  margin-bottom: 38px;
 }
 
 .contacts__link {
