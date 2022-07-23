@@ -561,14 +561,12 @@ body {
   fill: var(--primary-color);
 }
 
-@media screen and (min-width: 480px) {
-  .customers-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
+.customers-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 @media screen and (max-width: 479px) {
@@ -576,7 +574,7 @@ body {
     margin-bottom: 30px;
   }
 }
-@media screen and (min-width: 480px) and (max-width: 787px) {
+@media screen and (max-width: 768px) {
   .customers-list__item {
     width: calc((100% - 30px) / 2);
   }

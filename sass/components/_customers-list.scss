@@ -1,13 +1,8 @@
 .customers-list {
   @extend %list;
   // display: inline-flex;
-
-  @media screen and (min-width: 480px) {
-    & {
-      display: flex;
-      flex-wrap: wrap;
-    }
-  }
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .customers-list__item {
@@ -22,7 +17,7 @@
       margin-bottom: 30px;
     }
   }
-  @media screen and (min-width: 480px) and (max-width: 787px) {
+  @media screen and (max-width: 768px) {
     & {
       width: calc((100% - 1 * 30px) / 2);
     }
