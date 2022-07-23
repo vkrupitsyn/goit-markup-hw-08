@@ -1,10 +1,13 @@
 .contacts {
   @extend %list;
 
-  display: none;
-
   // display: flex;
   // margin-left: auto;
+  margin-top: auto;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
 }
 
 .contacts__item:not(:last-child) {
@@ -25,6 +28,7 @@
 }
 
 .contacts__icon {
+  display: none;
   fill: currentColor;
   margin-right: 10px;
 }
