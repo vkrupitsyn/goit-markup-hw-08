@@ -1,7 +1,6 @@
 .hero {
   max-width: 1600px;
   padding: 118px 60px;
-  // padding: 200px 0;
   margin: 0 auto;
   text-align: center;
   background-color: var(--secondary-bg-color);
@@ -11,8 +10,18 @@
   background-size: cover;
 
   @media screen and (min-width: 768px) {
-    background-image: linear-gradient(to right, var(--hero-bg-opacity), var(--hero-bg-opacity)),
-      url(../images/bg-hero-tablet.jpg);
+    & {
+      background-image: linear-gradient(to right, var(--hero-bg-opacity), var(--hero-bg-opacity)),
+        url(../images/bg-hero-tablet.jpg);
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    & {
+      background-image: linear-gradient(to right, var(--hero-bg-opacity), var(--hero-bg-opacity)),
+        url(../images/bg-hero-desktop.jpg);
+      padding: 200px 0;
+    }
   }
 }
 

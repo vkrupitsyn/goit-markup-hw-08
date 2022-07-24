@@ -191,6 +191,13 @@ body {
     background-image: linear-gradient(to right, var(--hero-bg-opacity), var(--hero-bg-opacity)), url(../images/bg-hero-tablet.jpg);
   }
 }
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--hero-bg-opacity)), to(var(--hero-bg-opacity))), url(../images/bg-hero-desktop.jpg);
+    background-image: linear-gradient(to right, var(--hero-bg-opacity), var(--hero-bg-opacity)), url(../images/bg-hero-desktop.jpg);
+    padding: 200px 0;
+  }
+}
 
 .hero__title {
   margin-bottom: 30px;
@@ -417,6 +424,11 @@ body {
     margin-left: 88px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .nav__list {
+    margin-left: 93px;
+  }
+}
 
 .nav__item {
   position: relative;
@@ -503,13 +515,6 @@ body {
 }
 
 .nav__menu-backdrop {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 2;
   background-color: var(--primary-color);
 }
 .nav__menu-backdrop.is-open {
@@ -517,12 +522,21 @@ body {
   display: -ms-flexbox;
   display: flex;
 }
+@media screen and (max-width: 767px) {
+  .nav__menu-backdrop {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
 @media screen and (min-width: 768px) {
   .nav__menu-backdrop {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    position: static;
     -webkit-box-flex: 2;
         -ms-flex-positive: 2;
             flex-grow: 2;
@@ -530,19 +544,26 @@ body {
 }
 
 .nav__menu-container {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+}
+@media screen and (max-width: 767px) {
+  .nav__menu-container {
+    position: relative;
+    -webkit-box-align: left;
+        -ms-flex-align: left;
+            align-items: left;
+  }
 }
 @media screen and (min-width: 768px) {
   .nav__menu-container {
     -webkit-box-flex: 2;
         -ms-flex-positive: 2;
             flex-grow: 2;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 @media screen and (min-width: 480px) and (max-width: 768px) {
@@ -564,6 +585,15 @@ body {
   }
 }
 
+.contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .contacts {
     font-size: 34px;
@@ -571,6 +601,10 @@ body {
 }
 @media screen and (max-width: 767px) {
   .contacts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
     margin-top: auto;
     margin-bottom: 58px;
     font-weight: 500;
@@ -584,13 +618,31 @@ body {
     margin-left: auto;
   }
 }
-
-.contacts__item:not(:last-child) {
-  margin-bottom: 38px;
+@media screen and (min-width: 1200px) {
+  .contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
-@media screen and (min-width: 768px) {
+
+@media screen and (max-width: 767px) {
+  .contacts__item:nth-child(2) {
+    font-size: 34px;
+    margin-bottom: 38px;
+  }
+  .contacts__item:nth-child(1) {
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 1199px) {
   .contacts__item:not(:last-child) {
     margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__item:not(:last-child) {
+    margin-right: 50px;
   }
 }
 
@@ -603,10 +655,21 @@ body {
   transition: color 250ms var(--cubic-bezier);
 }
 
+@media screen and (max-width: 767px) {
+  .contacts__link--accent {
+    color: var(--accent-color);
+  }
+}
+
 .contacts__icon {
   display: none;
   fill: currentColor;
   margin-right: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .contacts__icon {
+    display: block;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1019,7 +1082,6 @@ body {
   opacity: 1;
   -webkit-transition: opacity 250ms var(--cubic-bezier);
   transition: opacity 250ms var(--cubic-bezier);
-  overflow: scroll;
 }
 
 .is-hidden {
@@ -1051,6 +1113,16 @@ body {
 @media screen and (min-width: 480px) {
   .modal {
     width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    top: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
   }
 }
 
