@@ -40,6 +40,8 @@
 
   @media screen and (min-width: 768px) {
     & {
+      display: flex;
+      align-items: stretch;
       width: calc((100% - 60px) / 2);
       margin: 15px;
     }
@@ -49,6 +51,14 @@
 .portfolio-gallery__link {
   @extend %link;
   display: block;
+
+  @media screen and (min-width: 768px) {
+    & {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+    }
+  }
 }
 
 .portfolio-gallery__overlay {
@@ -84,6 +94,12 @@
   border-right: 1px solid var(--border-color);
   border-bottom: 1px solid var(--border-color);
   border-left: 1px solid var(--border-color);
+
+  @media screen and (min-width: 768px) {
+    & {
+      flex: auto;
+    }
+  }
 }
 
 .portfolio-gallery__name {
