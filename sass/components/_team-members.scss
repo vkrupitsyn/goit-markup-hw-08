@@ -3,6 +3,14 @@
 
   // display: flex;
   // flex-wrap: wrap;
+
+  @media screen and (min-width: 768px) {
+    & {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -15px;
+    }
+  }
 }
 
 .team-members__card {
@@ -28,6 +36,12 @@
   // &:nth-last-child(-n + 4) {
   //   margin-bottom: 0;
   // }
+  @media screen and (min-width: 768px) {
+    & {
+      width: calc((100% - 60px) / 2);
+      margin: 15px;
+    }
+  }
 }
 
 .team-members__thumb {

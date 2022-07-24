@@ -5,6 +5,11 @@
 
 .subsribe__form {
   // display: flex;
+  @media screen and (min-width: 768px) {
+    & {
+      width: 450px;
+    }
+  }
 }
 
 .subscribe__input {
