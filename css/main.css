@@ -213,7 +213,7 @@ body {
 @media screen and (max-width: 767px) {
   .menu-backdrop {
     display: none;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
