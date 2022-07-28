@@ -46,14 +46,13 @@
   @media screen and (min-width: 1200px) {
     & {
       width: calc((100% - 90px) / 3);
-      margin: 15px;
     }
   }
 }
 
 .portfolio-gallery__link {
   @extend %link;
-  
+
   display: block;
 
   @media screen and (min-width: 768px) {

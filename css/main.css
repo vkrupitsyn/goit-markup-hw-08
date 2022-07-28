@@ -392,7 +392,6 @@ body {
 @media screen and (min-width: 1200px) {
   .features__item {
     width: calc((100% - 120px) / 4);
-    margin: 15px;
   }
 }
 
@@ -783,7 +782,6 @@ body {
 @media screen and (min-width: 1200px) {
   .team-members__card {
     width: calc((100% - 120px) / 4);
-    margin: 15px;
   }
 }
 
@@ -869,16 +867,17 @@ body {
   }
 }
 
+.customers-list__item {
+  margin: 15px;
+}
 @media screen and (max-width: 767px) {
   .customers-list__item {
     width: calc((100% - 60px) / 2);
-    margin: 15px;
   }
 }
 @media screen and (min-width: 768px) {
   .customers-list__item {
     width: calc((100% - 180px) / 3);
-    margin: 15px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1115,7 +1114,6 @@ body {
 @media screen and (min-width: 1200px) {
   .portfolio-gallery__item {
     width: calc((100% - 90px) / 3);
-    margin: 15px;
   }
 }
 

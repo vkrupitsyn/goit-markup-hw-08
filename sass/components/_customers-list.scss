@@ -11,16 +11,16 @@
 }
 
 .customers-list__item {
+  margin: 15px;
+  
   @media screen and (max-width: 767px) {
     & {
       width: calc((100% - 1 * 60px) / 2);
-      margin: 15px;
     }
   }
   @media screen and (min-width: 768px) {
     & {
       width: calc((100% - 2 * 90px) / 3);
-      margin: 15px;
     }
   }
   @media screen and (min-width: 1200px) {
