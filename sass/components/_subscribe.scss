@@ -1,10 +1,11 @@
 .subscribe__title {
   @extend %subtitle;
+
   margin-bottom: 20px;
 }
 
 .subsribe__form {
-  @media screen and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     & {
       width: 450px;
     }

@@ -1,5 +1,6 @@
 .address-list {
   @extend %list;
+
   @media screen and (max-width: 1199px) {
     & {
       margin-bottom: 60px;
@@ -17,6 +18,7 @@
 
 .address-list__link {
   @extend %link;
+
   font-weight: normal;
   color: var(--opacity-adress-color);
 

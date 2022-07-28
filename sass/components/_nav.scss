@@ -16,7 +16,6 @@
   @media screen and (min-width: 768px) {
     & {
       display: flex;
-      //margin-left: 93px;
       margin-left: 88px;
     }
   }
@@ -46,6 +45,7 @@
 
 .nav__link {
   @extend %link;
+
   display: block;
   line-height: 1.15;
 
@@ -82,7 +82,6 @@
 }
 
 .nav__button {
-  // z-index: 3;
   display: inline-flex;
   margin: 0;
   padding: 0;

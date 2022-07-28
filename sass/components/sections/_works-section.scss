@@ -1,6 +1,6 @@
 .works {
-  display: none;
   @extend %section;
+  display: none;
 
   padding-top: 0;
 
@@ -11,9 +11,6 @@
   }
 }
 
-.works__wrap {
-}
-
 .works__title {
   @extend %title;
 
@@ -22,6 +19,7 @@
 
 .works__list {
   @extend %list;
+
   display: flex;
   flex-wrap: wrap;
   margin: -15px;
@@ -63,8 +61,4 @@
   height: 70px;
   color: var(--primary-color);
   background-color: var(--works-descr-bg-color);
-}
-
-.works__thumb {
-  @extend %img;
 }

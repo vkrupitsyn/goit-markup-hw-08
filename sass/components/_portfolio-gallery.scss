@@ -1,9 +1,6 @@
 .portfolio-gallery {
   @extend %list;
 
-  // display: flex;
-  // flex-wrap: wrap;
-
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
@@ -14,7 +11,6 @@
 
 .portfolio-gallery__item {
   position: relative;
-  // margin-right: 30px;
   margin-bottom: 30px;
 
   &:hover {
@@ -57,6 +53,7 @@
 
 .portfolio-gallery__link {
   @extend %link;
+  
   display: block;
 
   @media screen and (min-width: 768px) {
@@ -74,7 +71,6 @@
 }
 
 .portfolio-gallery__img {
-  @extend %img;
   width: 100%;
 }
 

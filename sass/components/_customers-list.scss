@@ -1,6 +1,5 @@
 .customers-list {
   @extend %list;
-  // display: inline-flex;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -12,17 +11,6 @@
 }
 
 .customers-list__item {
-  //
-  // height: 92px;
-
-  // &:not(:last-child) {
-  //   margin-right: 30px;
-  // }
-  // @media screen and (max-width: 479px) {
-  //   &:not(:last-child) {
-  //     margin-bottom: 30px;
-  //   }
-  // }
   @media screen and (max-width: 767px) {
     & {
       width: calc((100% - 1 * 60px) / 2);
