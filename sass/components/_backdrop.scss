@@ -7,6 +7,12 @@
   background-color: var(--modal-opacity-bg);
   opacity: 1;
   transition: opacity 250ms var(--cubic-bezier);
+
+  @media screen and (max-width: 1199px) {
+    & {
+      z-index: 3;
+    }
+  }
 }
 
 .is-hidden {

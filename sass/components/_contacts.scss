@@ -2,7 +2,6 @@
   @extend %list;
 
   display: flex;
-  flex-direction: column;
 
   @media screen and (min-width: 480px) and (max-width: 767px) {
     & {
@@ -25,6 +24,12 @@
   @media screen and (min-width: 768px) {
     & {
       margin-left: auto;
+    }
+  }
+
+  @media screen and (max-width: 1199px) {
+    & {
+      flex-direction: column;
     }
   }
 

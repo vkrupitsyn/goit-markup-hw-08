@@ -145,6 +145,11 @@
       flex-grow: 2;
     }
   }
+  @media screen and (max-width: 1199px) {
+    & {
+      z-index: 2;
+    }
+  }
 }
 
 .nav__menu-container {

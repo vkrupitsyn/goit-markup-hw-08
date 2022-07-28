@@ -42,6 +42,13 @@
       margin: 15px;
     }
   }
+
+  @media screen and (min-width: 1200px) {
+    & {
+      width: calc((100% - 120px) / 4);
+      margin: 15px;
+    }
+  }
 }
 
 .team-members__thumb {
