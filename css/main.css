@@ -192,9 +192,6 @@ body {
 }
 @media screen and (min-width: 768px) {
   .menu-backdrop {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-flex: 2;
         -ms-flex-positive: 2;
             flex-grow: 2;
