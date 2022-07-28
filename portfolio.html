@@ -17,52 +17,57 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__wrap container">
-        <nav class="nav">
+      <div class="container">
+        <div class="header__wrap">
           <a href="./index.html" class="logo"><span class="logo__accent">Web</span>Studio</a>
           <button
             type="button"
-            class="nav__button"
+            class="menu-backdrop__button"
             aria-expanded="false"
-            aria-controls="nav__menu-container"
-            data-menu-button
+            aria-controls="menu-backdrop__container"
+            data-menu-button=""
           >
             <svg
-              class="nav__menu-icon"
+              class="menu-backdrop__menu-icon"
               width="40"
               height="40"
               aria-label="Переключатель мобтльного меню"
             >
-              <use class="nav__icon-menu" href="./images/icons.svg#sandwich-btn"></use>
+              <use class="menu-backdrop__icon-menu" href="./images/icons.svg#sandwich-btn"></use>
             </svg>
           </button>
-          <div class="nav__menu-backdrop" id="nav__menu-container" data-menu>
-            <div class="nav__menu-container">
+          <div class="menu-backdrop" id="nav__menu-container" data-menu>
+            <div class="menu-backdrop__container">
               <button
                 type="button"
-                class="nav__button nav__button--cross"
+                class="menu-backdrop__button menu-backdrop__button--cross"
                 aria-expanded="false"
-                aria-controls="nav__menu-container"
+                aria-controls="menu-backdrop__container"
                 data-menu-button-close
               >
                 <svg
-                  class="nav__menu-icon"
+                  class="menu-backdrop__menu-icon"
                   width="40"
                   height="40"
                   aria-label="Переключатель мобтльного меню"
                 >
-                  <use class="nav__icon-cross" href="./images/icons.svg#close-menu-btn"></use>
+                  <use
+                    class="menu-backdrop__icon-cross"
+                    href="./images/icons.svg#close-menu-btn"
+                  ></use>
                 </svg>
               </button>
-              <ul class="nav__list">
-                <li class="nav__item">
-                  <a class="nav__link" href="./index.html">Студия</a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link nav__link--current" href="./portfolio.html">Портфолио</a>
-                </li>
-                <li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
-              </ul>
+              <nav class="nav">
+                <ul class="nav__list">
+                  <li class="nav__item">
+                    <a class="nav__link" href="./index.html">Студия</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link nav__link--current" href="./portfolio.html">Портфолио</a>
+                  </li>
+                  <li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
+                </ul>
+              </nav>
               <ul class="contacts">
                 <li class="contacts__item">
                   <a class="contacts__link" href="mailto:info@devstudio.com">
@@ -95,7 +100,7 @@
               </ul>
             </div>
           </div>
-        </nav>
+        </div>
       </div>
     </header>
     <main>
