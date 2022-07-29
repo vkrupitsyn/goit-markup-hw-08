@@ -9,9 +9,8 @@
   @media screen and (min-width: 768px) {
     justify-content: center;
   }
-}
 
-.portfolio-buttons__item {
+  &__item {
   &:not(:last-child) {
     margin-right: 8px;
   }
@@ -21,7 +20,7 @@
   }
 }
 
-.portfolio-buttons__link {
+&__link {
   border-radius: 4px;
   padding: 6px 22px;
   background-color: var(--accent-bg-color);
@@ -44,4 +43,6 @@
     transition: background-color 250ms var(--cubic-bezier), color 250ms var(--cubic-bezier),
       box-shadow 250ms var(--cubic-bezier);
   }
+}
+
 }

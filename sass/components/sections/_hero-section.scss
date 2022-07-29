@@ -42,9 +42,8 @@
       }
     }
   }
-}
 
-.hero__title {
+  &__title {
   margin-bottom: 30px;
 
   font-weight: 900;
@@ -63,4 +62,5 @@
       line-height: 1.36;
     }
   }
+}
 }

@@ -6,7 +6,7 @@
     transform: translateX(0);
   }
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.98px) {
     & {
       position: fixed;
       top: 0;
@@ -24,7 +24,7 @@
       flex-grow: 2;
     }
   }
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 1199.98px) {
     & {
       z-index: 2;
     }
@@ -34,7 +34,7 @@
 .menu-backdrop__container {
   display: flex;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.98px) {
     & {
       position: relative;
       align-items: left;
@@ -48,7 +48,7 @@
     }
   }
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.98px) {
     & {
       width: 100%;
       flex-direction: column;

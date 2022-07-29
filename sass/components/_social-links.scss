@@ -6,13 +6,11 @@
   margin-left: -10px;
   margin-right: -10px;
 
-  .social-links__item:not(:last-of-type) {
-    .social-links__link {
-      border-right: var(--border-social-links);
-    }
+  &__item:not(:last-of-type) &__link {
+    border-right: var(--border-social-links);
   }
 
-  .social-links__link {
+  &__link {
     @extend %link;
 
     color: var(--accent-color);

@@ -3,13 +3,13 @@
 
   display: flex;
 
-  @media screen and (min-width: 480px) and (max-width: 767px) {
+  @media screen and (min-width: 480px) and (max-width: 767.98px) {
     & {
       font-size: 34px;
     }
   }
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.98px) {
     & {
       flex-direction: column-reverse;
       margin-top: auto;
@@ -27,7 +27,7 @@
     }
   }
 
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 1199.98px) {
     & {
       flex-direction: column;
     }
@@ -38,62 +38,62 @@
       display: flex;
     }
   }
-}
 
-.contacts__item {
-  @media screen and (max-width: 767px) {
-    &:nth-child(2) {
-      font-size: 34px;
-      margin-bottom: 38px;
+  &__item {
+    @media screen and (max-width: 767.98px) {
+      &:nth-child(2) {
+        font-size: 34px;
+        margin-bottom: 38px;
+      }
+
+      &:nth-child(1) {
+        font-size: 26px;
+      }
     }
 
-    &:nth-child(1) {
-      font-size: 26px;
+    &:not(:last-child) {
+      @media screen and (max-width: 1199.98px) {
+        & {
+          margin-bottom: 10px;
+        }
+      }
+
+      @media screen and (min-width: 1200px) {
+        & {
+          margin-right: 50px;
+        }
+      }
     }
   }
 
-  &:not(:last-child) {
-    @media screen and (max-width: 1199px) {
-      & {
-        margin-bottom: 10px;
-      }
+  &__link {
+    @extend %vertical-centered;
+    @extend %link;
+
+    color: var(--secondary-text-color);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+      transition: color 250ms var(--cubic-bezier);
     }
+  }
+
+  &__link--accent {
+    @media screen and (max-width: 767.98px) {
+      color: var(--accent-color);
+    }
+  }
+
+  &__icon {
+    display: none;
+    fill: currentColor;
+    margin-right: 10px;
 
     @media screen and (min-width: 1200px) {
       & {
-        margin-right: 50px;
+        display: block;
       }
-    }
-  }
-}
-
-.contacts__link {
-  @extend %vertical-centered;
-  @extend %link;
-
-  color: var(--secondary-text-color);
-
-  &:hover,
-  &:focus {
-    color: var(--accent-color);
-    transition: color 250ms var(--cubic-bezier);
-  }
-}
-
-.contacts__link--accent {
-  @media screen and (max-width: 767px) {
-    color: var(--accent-color);
-  }
-}
-
-.contacts__icon {
-  display: none;
-  fill: currentColor;
-  margin-right: 10px;
-
-  @media screen and (min-width: 1200px) {
-    & {
-      display: block;
     }
   }
 }

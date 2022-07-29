@@ -1,14 +1,13 @@
 .address-list {
   @extend %list;
 
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 767.98px) {
     & {
       margin-bottom: 60px;
     }
   }
-}
 
-.address-list__item {
+  &__item {
   font-style: normal;
 
   &:not(:last-child) {
@@ -16,7 +15,7 @@
   }
 }
 
-.address-list__link {
+&__link {
   @extend %link;
 
   font-weight: normal;
@@ -26,4 +25,6 @@
     color: var(--accent-color);
     transition: color 250ms var(--cubic-bezier);
   }
+}
+
 }
