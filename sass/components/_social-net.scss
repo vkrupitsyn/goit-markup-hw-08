@@ -24,10 +24,11 @@
     &:active {
       background-color: var(--accent-color);
     }
-    &:hover &__icon,
-    &:active &__icon {
-      fill: var(--primary-color);
-    }
+  }
+
+  &__link:hover &__icon,
+  &__link:active &__icon {
+    fill: var(--primary-color);
   }
 
   &__link--footer {

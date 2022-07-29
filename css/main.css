@@ -810,7 +810,7 @@ body {
 .social-net__link:hover, .social-net__link:active {
   background-color: var(--accent-color);
 }
-.social-net__link:hover .social-net__link__icon, .social-net__link:active .social-net__link__icon {
+.social-net__link:hover .social-net__icon, .social-net__link:active .social-net__icon {
   fill: var(--primary-color);
 }
 .social-net__link--footer {
@@ -1038,14 +1038,6 @@ body {
   transition: box-shadow 250ms var(--cubic-bezier);
   transition: box-shadow 250ms var(--cubic-bezier), -webkit-box-shadow 250ms var(--cubic-bezier);
 }
-.portfolio-gallery__item:hover .portfolio-gallery__item__text {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-  -webkit-transition: -webkit-transform 250ms var(--cubic-bezier);
-  transition: -webkit-transform 250ms var(--cubic-bezier);
-  transition: transform 250ms var(--cubic-bezier);
-  transition: transform 250ms var(--cubic-bezier), -webkit-transform 250ms var(--cubic-bezier);
-}
 @media screen and (max-width: 767px) {
   .portfolio-gallery__item:nth-child(3n) {
     margin-right: 0;
@@ -1070,6 +1062,14 @@ body {
   .portfolio-gallery__item {
     width: calc((100% - 90px) / 3);
   }
+}
+.portfolio-gallery__item:hover .portfolio-gallery__text {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: -webkit-transform 250ms var(--cubic-bezier);
+  transition: -webkit-transform 250ms var(--cubic-bezier);
+  transition: transform 250ms var(--cubic-bezier);
+  transition: transform 250ms var(--cubic-bezier), -webkit-transform 250ms var(--cubic-bezier);
 }
 .portfolio-gallery__link {
   display: block;
