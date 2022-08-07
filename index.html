@@ -203,13 +203,50 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team-members">
             <li class="team-members__card">
-              <img
-                class="team-members__thumb"
-                srcset="./images/ilya.jpg 1x, ./images/ilya@x2.jpg 2x"
-                src="./images/ilya.jpg"
-                alt="Игорь Демьяненко"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team-image/igor-desktop.webp    1x,
+                    ./images/team-image/igor-desktop@x2.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-image/igor-desktop.jpg    1x,
+                    ./images/team-image/igor-desktop@x2.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-image/igor-tablet.webp    1x,
+                    ./images/team-image/igor-tablet@x2.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-image/igor-tablet.jpg    1x,
+                    ./images/team-image/igor-tablet@x2.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/team-image/igor.webp 1x, ./images/team-image/igor@x2.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/team-image/igor.jpg 1x, ./images/team-image/igor@x2.jpg 2x"
+                  type="image/jpeg"
+                />
+                <img
+                  class="team-members__thumb"
+                  src="./images/team-image/igor.jpg"
+                  alt="Игорь Демьяненко"
+                  width="450"
+                />
+              </picture>
               <h3 class="team-members__title">Игорь Демьяненко</h3>
               <p class="team-members__text">Product Designer</p>
               <ul class="social-net">
@@ -240,13 +277,50 @@
               </ul>
             </li>
             <li class="team-members__card">
-              <img
-                class="team-members__thumb"
-                srcset="./images/olga.jpg 1x, ./images/olga@x2.jpg 2x"
-                src="./images/olga.jpg"
-                alt="Ольга Репина"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team-image/olga-desktop.webp    1x,
+                    ./images/team-image/olga-desktop@x2.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-image/olga-desktop.jpg    1x,
+                    ./images/team-image/olga-desktop@x2.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-image/olga-tablet.webp    1x,
+                    ./images/team-image/olga-tablet@x2.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-image/olga-tablet.jpg    1x,
+                    ./images/team-image/olga-tablet@x2.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/team-image/olga.webp 1x, ./images/team-image/olga@x2.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/team-image/olga.jpg 1x, ./images/team-image/olga@x2.jpg 2x"
+                  type="image/jpeg"
+                />
+                <img
+                  class="team-members__thumb"
+                  src="./images/team-image/olga.jpg"
+                  alt="Ольга Репина"
+                  width="450"
+                />
+              </picture>
               <h3 class="team-members__title">Ольга Репина</h3>
               <p class="team-members__text">Frontend Developer</p>
               <ul class="social-net">
@@ -277,13 +351,53 @@
               </ul>
             </li>
             <li class="team-members__card">
-              <img
-                class="team-members__thumb"
-                srcset="./images/nikolay.jpg 1x, ./images/nikolay@x2.jpg 2x"
-                src="./images/nikolay.jpg"
-                alt="Николай Тарасов"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team-image/nikolay-desktop.webp    1x,
+                    ./images/team-image/nikolay-desktop@x2.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-image/nikolay-desktop.jpg    1x,
+                    ./images/team-image/nikolay-desktop@x2.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-image/nikolay-tablet.webp    1x,
+                    ./images/team-image/nikolay-tablet@x2.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-image/nikolay-tablet.jpg    1x,
+                    ./images/team-image/nikolay-tablet@x2.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-image/nikolay.webp    1x,
+                    ./images/team-image/nikolay@x2.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/team-image/nikolay.jpg 1x, ./images/team-image/nikolay@x2.jpg 2x"
+                  type="image/jpeg"
+                />
+                <img
+                  class="team-members__thumb"
+                  src="./images/team-image/nikolay.jpg"
+                  alt="Николай Тарасов"
+                  width="450"
+                />
+              </picture>
               <h3 class="team-members__title">Николай Тарасов</h3>
               <p class="team-members__text">Marketing</p>
               <ul class="social-net">
@@ -314,13 +428,53 @@
               </ul>
             </li>
             <li class="team-members__card">
-              <img
-                class="team-members__thumb"
-                srcset="./images/michael.jpg 1x, ./images/michael@x2.jpg 2x"
-                src="./images/michael.jpg"
-                alt="Михаил Ермаков"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team-image/michael-desktop.webp    1x,
+                    ./images/team-image/michael-desktop@x2.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-image/michael-desktop.jpg    1x,
+                    ./images/team-image/michael-desktop@x2.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-image/michael-tablet.webp    1x,
+                    ./images/team-image/michael-tablet@x2.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-image/michael-tablet.jpg    1x,
+                    ./images/team-image/michael-tablet@x2.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-image/michael.webp    1x,
+                    ./images/team-image/michael@x2.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/team-image/michael.jpg 1x, ./images/team-image/michael@x2.jpg 2x"
+                  type="image/jpeg"
+                />
+                <img
+                  class="team-members__thumb"
+                  src="./images/team-image/michael.jpg"
+                  alt="Михаил Ермаков"
+                  width="450"
+                />
+              </picture>
               <h3 class="team-members__title">Михаил Ермаков</h3>
               <p class="team-members__text">UI Designer</p>
               <ul class="social-net">
