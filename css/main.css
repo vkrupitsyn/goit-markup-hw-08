@@ -1,4 +1,15 @@
-@import url("https: ; //fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css");
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  background-color: var(--primary-color);
+  color: var(--primary-text-color);
+}
+
 :root {
   --primary-color: #ffffff;
   --accent-color: #2196f3;
@@ -84,6 +95,7 @@ img {
 }
 
 .portfolio__title, .customers__title, .team__title, .works__title {
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -100,7 +112,7 @@ img {
   text-transform: uppercase;
 }
 
-.portfolio__title, .featuress__title {
+.portfolio__title, .features__title {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -112,16 +124,6 @@ img {
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-body {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  background-color: var(--primary-color);
-  color: var(--primary-text-color);
 }
 
 .container {
@@ -409,6 +411,11 @@ body {
 .features__subtitle {
   text-align: center;
   margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  .features__subtitle {
+    text-align: left;
+  }
 }
 .features__text {
   color: var(--secondary-text-color);
