@@ -170,27 +170,45 @@
           <h2 class="works__title">Чем мы занимаемся</h2>
           <ul class="works__list">
             <li class="works__item">
-              <img
-                srcset="./images/img-keyboard.jpg 1x, ./images/img-keyboard@x2.jpg 2x"
-                src="./images/img-keyboard.jpg"
-                alt="keyboard"
-              />
+              <picture>
+                <source
+                  srcset="./images/img-keyboard.webp 1x, ./images/img-keyboard@x2.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/img-keyboard.jpg 1x, ./images/img-keyboard@x2.jpg 2x"
+                  type="image/jpeg"
+                />
+                <img src="./images/img-keyboard.jpg" alt="keyboard" width="370" />
+              </picture>
               <h3 class="works__descr">Десктопные приложения</h3>
             </li>
             <li class="works__item">
-              <img
-                srcset="./images/img-smartphone.jpg 1x, ./images/img-smartphone@x2.jpg 2x"
-                src="./images/img-smartphone.jpg"
-                alt="keyboard"
-              />
+              <picture>
+                <source
+                  srcset="./images/img-smartphone.webp 1x, ./images/img-smartphone@x2.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/img-smartphone.jpg 1x, ./images/img-smartphone@x2.jpg 2x"
+                  type="image/jpeg"
+                />
+                <img src="./images/img-smartphone.jpg" alt="keyboard" width="370" />
+              </picture>
               <h3 class="works__descr">Мобильные приложения</h3>
             </li>
             <li class="works__item">
-              <img
-                srcset="./images/img-tablet.jpg 1x, ./images/img-tablet@x2.jpg 2x"
-                src="./images/img-smartphone.jpg"
-                alt="keyboard"
-              />
+              <picture>
+                <source
+                  srcset="./images/img-tablet.webp 1x, ./images/img-tablet@x2.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/img-tablet.jpg 1x, ./images/img-tablet@x2.jpg 2x"
+                  type="image/jpeg"
+                />
+                <img src="./images/img-smartphone.jpg" alt="keyboard" width="370" />
+              </picture>
               <h3 class="works__descr">Дизайнерские решения</h3>
             </li>
           </ul>
@@ -217,6 +235,7 @@
                     ./images/team-image/igor-tablet.webp    1x,
                     ./images/team-image/igor-tablet@x2.webp 2x
                   "
+                  type="image/webp"
                   media="(min-width: 768px) and (max-width: 1199px)"
                 />
                 <source
@@ -224,6 +243,7 @@
                     ./images/team-image/igor-tablet.jpg    1x,
                     ./images/team-image/igor-tablet@x2.jpg 2x
                   "
+                  type="image/jpeg"
                   media="(min-width: 768px) and (max-width: 1199px)"
                 />
                 <source
@@ -231,6 +251,7 @@
                     ./images/team-image/igor-desktop.webp    1x,
                     ./images/team-image/igor-desktop@x2.webp 2x
                   "
+                  type="image/webp"
                   media="(min-width: 1200px)"
                 />
                 <source
@@ -238,6 +259,7 @@
                     ./images/team-image/igor-desktop.jpg    1x,
                     ./images/team-image/igor-desktop@x2.jpg 2x
                   "
+                  type="image/jpeg"
                   media="(min-width: 1200px)"
                 />
 
